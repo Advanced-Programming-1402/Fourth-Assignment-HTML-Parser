@@ -1,6 +1,6 @@
 # Fourth Assignment: HTML Parser 🌐
 
-## Introduction
+## Introduction 
 
 This project delves into the practical application of HTML parsing techniques using Java and the JSoup library. The objective is to extract and manipulate data from a structured HTML document containing information about various countries. Key tasks include parsing the document, creating Java objects to represent the data, sorting the information based on different criteria, and presenting the results effectively.
 
