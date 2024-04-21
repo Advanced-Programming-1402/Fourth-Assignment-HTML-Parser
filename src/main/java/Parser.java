@@ -33,22 +33,41 @@ public class Parser {
         return sortedByArea;
     }
 
-    public void setUp() throws IOException
+    public static void setUp()
     {
+        try {
+            File HTMLfile = new File("src/Resources/country-list.html");
+            Document document = Jsoup.parse(HTMLfile, "UTF-8");
 
-        //Parse the HTML file using Jsoup
-        //TODO
+            Elements elements = document.select("div.country");
 
-        // Extract data from the HTML
-        //TODO
+            for (Element element : elements)
+            {
+                String name = element.select("h3.country-name").text();
+                String capital = element.select("span.country-capital").text();
+                int population = Integer.parseInt(element.select("span.country-population").text());
+                double area = Double.parseDouble(element.select("span.country-area").text());
+                Country PHcountry = new Country(name, capital, population, area);
+                countries.add(PHcountry);
+            }
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
-        // Iterate through each country div to extract country data
-        //TODO
     }
 
     public static void main(String[] args)
     {
-        //you can test your code here before you run the unit tests ;)
-        System.out.println("poopoo");
+        setUp();
+
+        for (Country item : countries)
+        {
+            System.out.println(item.getCapital());
+        }
+
+        System.out.println(countries.size());
+
     }
 }

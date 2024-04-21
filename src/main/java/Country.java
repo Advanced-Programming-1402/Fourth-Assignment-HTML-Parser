@@ -6,9 +6,12 @@ public class Country {
     private int population;
     private double area;
 
-    public Country(String name, String capital, int population, double area) {
+    public Country(String N, String C, int P, double A) {
         //TODO
-
+        name = N;
+        capital = C;
+        population = P;
+        area = A;
     }
 
     public String getName() {
