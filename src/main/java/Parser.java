@@ -17,11 +17,20 @@ public class Parser {
         return  sortedByName;
     }
 
-    public List<Country> sortByPopulation()
+    public static List<Country> sortByPopulation()
     {
         List<Country> sortedByPopulation = new ArrayList<>(countries);
-        // Sort countries by population (most)
-        //TODO
+        Collections.sort(sortedByPopulation, new Comparator<Country>()
+        {
+            @Override
+            public int compare(Country PHcountry1, Country PHcountry2)
+            {
+                int population1 = PHcountry1.getPopulation();
+                int population2 = PHcountry2.getPopulation();
+                return Integer.compare(population1, population2);
+            }
+        });
+
         return sortedByPopulation;
     }
 
@@ -64,10 +73,15 @@ public class Parser {
 
         for (Country item : countries)
         {
-            System.out.println(item.getCapital());
+            System.out.println(item.getName());
         }
 
         System.out.println(countries.size());
+
+        for (Country item : sortByPopulation())
+        {
+            System.out.println(item.getPopulation() + " " + item.getName());
+        }
 
     }
 }
