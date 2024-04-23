@@ -27,18 +27,26 @@ public class Parser {
             {
                 int population1 = PHcountry1.getPopulation();
                 int population2 = PHcountry2.getPopulation();
-                return Integer.compare(population1, population2);
+                return Integer.compare(population2, population1);
             }
         });
 
         return sortedByPopulation;
     }
 
-    public List<Country> sortByArea()
+    public static List<Country> sortByArea()
     {
         List<Country> sortedByArea = new ArrayList<>(countries);
-        // Sort countries by area (most)
-        //TODO
+        Collections.sort(sortedByArea, new Comparator<Country>()
+        {
+            @Override
+            public int compare(Country PHcountry1, Country PHcountry2)
+            {
+                double area1 = PHcountry1.getArea();
+                double area2 = PHcountry2.getArea();
+                return Double.compare(area2, area1);
+            }
+        });
         return sortedByArea;
     }
 
@@ -78,9 +86,9 @@ public class Parser {
 
         System.out.println(countries.size());
 
-        for (Country item : sortByPopulation())
+        for (Country item : sortByArea())
         {
-            System.out.println(item.getPopulation() + " " + item.getName());
+            System.out.println(item.getArea() + " " + item.getName());
         }
 
     }
