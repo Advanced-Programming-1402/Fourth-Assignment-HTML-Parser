@@ -112,32 +112,71 @@ public class Parser {
             sortedByPopulationCountries = sortedByPopulationCountries + "\n" + "\n" + item.getName() + " - " + item.getArea() + " - " + item.getPopulation();
         }
 
+
         JFrame frame = new JFrame("Countries");
 
         JTextArea textArea1 = new JTextArea();
         textArea1.setBounds(10, 30, 280, 450);
         textArea1.setText(sortedByNameCountries);
         textArea1.setEditable(false);
+        textArea1.setVisible(false);
         JScrollPane scroll1 = new JScrollPane(textArea1);
         scroll1.setBounds(10, 30, 280, 450);
         scroll1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         JTextArea textArea2 = new JTextArea();
-        textArea2.setBounds(300, 30, 280, 450);
+        textArea2.setBounds(10, 30, 280, 450);
         textArea2.setText(sortedByAreaCountries);
         textArea2.setEditable(false);
+        textArea2.setVisible(false);
         JScrollPane scroll2 = new JScrollPane(textArea2);
-        scroll2.setBounds(300, 30, 280, 450);
+        scroll2.setBounds(10, 30, 280, 450);
         scroll2.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         JTextArea textArea3 = new JTextArea();
-        textArea3.setBounds(590, 30, 280, 450);
+        textArea3.setBounds(10, 30, 280, 450);
         textArea3.setText(sortedByPopulationCountries);
         textArea3.setEditable(false);
+        textArea3.setVisible(false);
         JScrollPane scroll3 = new JScrollPane(textArea3);
-        scroll3.setBounds(590, 30, 280, 450);
+        scroll3.setBounds(10, 30, 280, 450);
         scroll3.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
+
+        JButton button1 = new JButton("SORT BY ALPHABETICAL ORDER");
+        button1.setBounds(500, 100, 250, 20);
+        JButton button2 = new JButton("SORT BY AREA");
+        button2.setBounds(500, 150, 250, 20);
+        JButton button3 = new JButton("SORT BY POPULATION");
+        button3.setBounds(500, 200, 250, 20);
+
+        button1.addActionListener(e -> {
+            scroll1.setVisible(true);
+            scroll2.setVisible(false);
+            scroll3.setVisible(false);
+
+            textArea1.setVisible(true);
+            textArea2.setVisible(true);
+            textArea3.setVisible(true);
+        });
+        button2.addActionListener(e -> {
+            scroll2.setVisible(true);
+            scroll1.setVisible(false);
+            scroll3.setVisible(false);
+
+            textArea1.setVisible(true);
+            textArea2.setVisible(true);
+            textArea3.setVisible(true);
+        });
+        button3.addActionListener(e -> {
+            scroll3.setVisible(true);
+            scroll1.setVisible(false);
+            scroll2.setVisible(false);
+
+            textArea1.setVisible(true);
+            textArea2.setVisible(true);
+            textArea3.setVisible(true);
+        });
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
@@ -146,6 +185,9 @@ public class Parser {
         frame.add(scroll1);
         frame.add(scroll2);
         frame.add(scroll3);
+        frame.add(button1);
+        frame.add(button2);
+        frame.add(button3);
         frame.setVisible(true);
 
     }
