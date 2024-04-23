@@ -2,9 +2,14 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import javax.swing.*;
+import java.awt.event.WindowEvent;
+import java.util.List;
 
 public class Parser {
     static List<Country> countries = new ArrayList<>();
@@ -88,10 +93,60 @@ public class Parser {
     {
         setUp();
 
-        for (Country item : countries)
+        String sortedByNameCountries = "SORTER BY NAME:";
+        String sortedByAreaCountries = "SORTED BY AREA";
+        String sortedByPopulationCountries = "SORTED BY POPULATION";
+
+        for (Country item : sortByName())
         {
-            System.out.println(item.getName());
+            sortedByNameCountries = sortedByNameCountries + "\n" + "\n" + item.getName() + " - " + item.getArea() + " - " + item.getPopulation();
         }
+
+        for (Country item : sortByArea())
+        {
+            sortedByAreaCountries = sortedByAreaCountries + "\n" + "\n" + item.getName() + " - " + item.getArea() + " - " + item.getPopulation();
+        }
+
+        for (Country item : sortByPopulation())
+        {
+            sortedByPopulationCountries = sortedByPopulationCountries + "\n" + "\n" + item.getName() + " - " + item.getArea() + " - " + item.getPopulation();
+        }
+
+        JFrame frame = new JFrame("Countries");
+
+        JTextArea textArea1 = new JTextArea();
+        textArea1.setBounds(10, 30, 280, 450);
+        textArea1.setText(sortedByNameCountries);
+        textArea1.setEditable(false);
+        JScrollPane scroll1 = new JScrollPane(textArea1);
+        scroll1.setBounds(10, 30, 280, 450);
+        scroll1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+        JTextArea textArea2 = new JTextArea();
+        textArea2.setBounds(300, 30, 280, 450);
+        textArea2.setText(sortedByAreaCountries);
+        textArea2.setEditable(false);
+        JScrollPane scroll2 = new JScrollPane(textArea2);
+        scroll2.setBounds(300, 30, 280, 450);
+        scroll2.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+        JTextArea textArea3 = new JTextArea();
+        textArea3.setBounds(590, 30, 280, 450);
+        textArea3.setText(sortedByPopulationCountries);
+        textArea3.setEditable(false);
+        JScrollPane scroll3 = new JScrollPane(textArea3);
+        scroll3.setBounds(590, 30, 280, 450);
+        scroll3.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+        frame.setLocationRelativeTo(null);
+        frame.setSize(900, 550);
+        frame.add(scroll1);
+        frame.add(scroll2);
+        frame.add(scroll3);
+        frame.setVisible(true);
 
     }
 }
