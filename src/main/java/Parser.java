@@ -9,11 +9,20 @@ import java.util.*;
 public class Parser {
     static List<Country> countries = new ArrayList<>();
 
-    public List<Country> sortByName()
+    public static List<Country> sortByName()
     {
         List<Country> sortedByName = new ArrayList<>(countries);
-        // Sort countries alphabetically (least)
-        //TODO
+        Collections.sort(sortedByName, new Comparator<Country>()
+        {
+            @Override
+            public int compare(Country PHcountry1, Country PHcountry2)
+            {
+                String name1 = PHcountry1.getName();
+                String name2 = PHcountry2.getName();
+                return name1.compareTo(name2);
+            }
+        });
+
         return  sortedByName;
     }
 
@@ -82,13 +91,6 @@ public class Parser {
         for (Country item : countries)
         {
             System.out.println(item.getName());
-        }
-
-        System.out.println(countries.size());
-
-        for (Country item : sortByArea())
-        {
-            System.out.println(item.getArea() + " " + item.getName());
         }
 
     }

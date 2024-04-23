@@ -6,7 +6,8 @@ public class Country {
     private int population;
     private double area;
 
-    public Country(String N, String C, int P, double A) {
+    public Country(String N, String C, int P, double A)
+    {
         //TODO
         name = N;
         capital = C;
@@ -14,30 +15,36 @@ public class Country {
         area = A;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public String getCapital() {
+    public String getCapital()
+    {
         return capital;
     }
 
-    public int getPopulation() {
+    public int getPopulation()
+    {
         return population;
     }
 
-    public double getArea() {
+    public double getArea()
+    {
         return area;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         //TODO
         return "";
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o)
+    {
         Country country = (Country) o;
         return population == country.population &&
                 Double.compare(country.area, area) == 0 &&
