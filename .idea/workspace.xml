@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a605dfff-ee43-4feb-8a32-11c0aa0402f8" name="Changes" comment="" />
+    <list default="true" id="a605dfff-ee43-4feb-8a32-11c0aa0402f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ParserTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ParserTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ParserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ParserTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +41,26 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HTML-Parser" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -22,20 +68,54 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2czxOLfEywYECmtdYeXccYebHio" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Parser.executor": "Run",
+    "Gradle.ParserTest.testSortByName.executor": "Run",
+    "JUnit.ParserTest.executor": "Run",
+    "JUnit.ParserTest.testSortByArea.executor": "Run",
+    "JUnit.ParserTest.testSortByName.executor": "Run",
+    "JUnit.ParserTest.testSortByPopulation.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Asus/Desktop/placeHolder/Second-Assignment-CineScribe",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "git-widget-placeholder": "develop",
+    "jdk.selected.JAVA_MODULE": "jbr-17",
+    "js.buildTools.grunt.grunt-cli.package": "",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Asus/Desktop/Fourth-Assignment-HTML-Parser",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -43,35 +123,74 @@
       <recent name="E:\homework\semester 4\TA\HTML-Parser\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ParserTest.testSortByName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ParserTest.testSortByName&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+  <component name="RunManager" selected="Application.Parser">
+    <configuration name="Parser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parser" />
+      <module name="main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserTest.testSortByArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParserTest" />
+      <option name="METHOD_NAME" value="testSortByArea" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserTest.testSortByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParserTest" />
+      <option name="METHOD_NAME" value="testSortByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserTest.testSortByPopulation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParserTest" />
+      <option name="METHOD_NAME" value="testSortByPopulation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ParserTest.testSortByName" />
+        <item itemvalue="Application.Parser" />
+        <item itemvalue="JUnit.ParserTest.testSortByName" />
+        <item itemvalue="JUnit.ParserTest.testSortByArea" />
+        <item itemvalue="JUnit.ParserTest" />
+        <item itemvalue="JUnit.ParserTest.testSortByPopulation" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -86,6 +205,12 @@
       <workItem from="1709132777776" duration="1878000" />
       <workItem from="1709147208766" duration="626000" />
       <workItem from="1709754207930" duration="532000" />
+      <workItem from="1713251453815" duration="48000" />
+      <workItem from="1713635649215" duration="1066000" />
+      <workItem from="1713785973343" duration="9598000" />
+      <workItem from="1713802107516" duration="839000" />
+      <workItem from="1713802993534" duration="312000" />
+      <workItem from="1713809078512" duration="3462000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,10 @@ public class Country {
 
     public Country(String name, String capital, int population, double area) {
         //TODO
+        this.name = name;
+        this.area = area;
+        this.capital = capital;
+        this.population = population;
 
     }
 
