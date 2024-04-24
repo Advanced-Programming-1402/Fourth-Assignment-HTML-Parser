@@ -52,11 +52,11 @@ public class Parser {
 //        for (Element div : divs) {
 //            System.out.println(div.text());
 //        }
-        for(Element div : divs) {
-            String name = div.select("h3.country-name").text();
-            String capital = div.select("span.country-capital").text();
-            int population = Integer.parseInt(div.select("span.country-population").text());
-            double area = Double.parseDouble(div.select("span.country-area").text());
+        for (Element div : divs) {
+            String name = div.select("country-name").text();
+            String capital = div.select("country-capital").text();
+            int population = Integer.parseInt(div.select("country-population").text());
+            double area = Double.parseDouble(div.select("country-area").text());
             Country country1 = new Country(name , capital , population , area);
             countries.add(country1);
         }
