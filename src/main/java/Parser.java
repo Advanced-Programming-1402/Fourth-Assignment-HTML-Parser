@@ -93,8 +93,16 @@ public class Parser {
     public static void main(String[] args) throws IOException {
         setUp();
         while (true) {
+
             Scanner in = new Scanner(System.in);
             int input = -1;
+            while (input < 0 || input > 3) {
+                System.out.println("select one: ");
+                System.out.println("1) sortByArea");
+                System.out.println("2) sortByName ");
+                System.out.println("3) sortByPopulation");
+                input = in.nextInt();
+            }
 
             List<Country> list = new ArrayList<>();
             if (input == 0)
