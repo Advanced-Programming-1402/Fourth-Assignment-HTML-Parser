@@ -85,18 +85,68 @@ public class Parser {
                     for (int i = 0 ; i < parser.sortByPopulation().size() ; i++) {
                         System.out.println(i + "- Country: " + parser.sortByPopulation().get(i).getName() + ", capital: " + parser.sortByPopulation().get(i).getCapital() + ", population: " + parser.sortByPopulation().get(i).getPopulation() + ", area: " + parser.sortByPopulation().get(i).getArea());
                     }
-
+                    File file = new File("sorted-by-population.txt");
+                    try {
+                        if(file.createNewFile()) {
+                            System.out.println("A new file with this name : " + file.getName() + " created for you :)");
+                        }
+                        else {
+                            System.out.println("the file is exist : " + file.getName());
+                        }
+                        FileWriter Writer = new FileWriter("sorted-by-population.txt");
+                        for (int i = 0 ; i  < sortByPopulation().size() ; i++) {
+                            Writer.write((i + "- Country: " + parser.sortByPopulation().get(i).getName() + ", capital: " + parser.sortByPopulation().get(i).getCapital() + ", population: " + parser.sortByPopulation().get(i).getPopulation() + ", area: " + parser.sortByPopulation().get(i).getArea()).toString() + '\n');
+                        }
+                        Writer.close();
+                    }catch (Exception e) {
+                        System.out.println("Error");
+                        e.printStackTrace();
+                    }
                     break;
                 case 2 :
                     Parser parser1 = new Parser();
                     for (int i = 0 ; i < parser1.sortByArea().size() ; i++) {
                         System.out.println(i + "- Country: " + parser1.sortByArea().get(i).getName() + ", capital: " + parser1.sortByArea().get(i).getCapital() + ", population: " + parser1.sortByArea().get(i).getPopulation() + ", area: " + parser1.sortByArea().get(i).getArea());
                     }
+                    File file1 = new File("sorted-by-area.txt");
+                    try {
+                        if(file1.createNewFile()) {
+                            System.out.println("A new file with this name : " + file1.getName() + " created for you :)");
+                        }
+                        else {
+                            System.out.println("the file is exist : " + file1.getName());
+                        }
+                        FileWriter Writer = new FileWriter("sorted-by-area.txt");
+                        for (int i = 0 ; i  < sortByArea().size() ; i++) {
+                            Writer.write((i + "- Country: " + parser1.sortByArea().get(i).getName() + ", capital: " + parser1.sortByArea().get(i).getCapital() + ", population: " + parser1.sortByArea().get(i).getPopulation() + ", area: " + parser1.sortByArea().get(i).getArea()).toString() + '\n');
+                        }
+                        Writer.close();
+                    }catch (Exception e) {
+                        System.out.println("Error");
+                        e.printStackTrace();
+                    }
                     break;
                 case 3 :
                     Parser parser2 = new Parser();
                     for (int i = 0 ; i < parser2.sortByName().size() ; i++) {
                         System.out.println(i + "- Country: " + parser2.sortByName().get(i).getName() + ", capital: " + parser2.sortByName().get(i).getCapital() + ", population: " + parser2.sortByName().get(i).getPopulation() + ", area: " + parser2.sortByName().get(i).getArea());
+                    }
+                    File file2 = new File("sorted-by-name.txt");
+                    try {
+                        if(file2.createNewFile()) {
+                            System.out.println("A new file with this name : " + file2.getName() + " created for you :)");
+                        }
+                        else {
+                            System.out.println("the file is exist : " + file2.getName());
+                        }
+                        FileWriter Writer = new FileWriter("sorted-by-name.txt");
+                        for (int i = 0 ; i  < sortByName().size() ; i++) {
+                            Writer.write((i + "- Country: " + parser2.sortByName().get(i).getName() + ", capital: " + parser2.sortByName().get(i).getCapital() + ", population: " + parser2.sortByName().get(i).getPopulation() + ", area: " + parser2.sortByName().get(i).getArea()).toString() + "\n");
+                        }
+                        Writer.close();
+                    }catch (Exception e) {
+                        System.out.println("Error");
+                        e.printStackTrace();
                     }
                     break;
                 case 4 :
