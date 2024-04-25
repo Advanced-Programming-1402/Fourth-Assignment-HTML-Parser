@@ -1,36 +1,43 @@
 import java.util.Objects;
 
 public class Country {
-    private String name;
-    private String capital;
-    private int population;
-    private double area;
+    private static String name;
+    private static String capital;
+    private static int population;
+    private static double area;
 
     public Country(String name, String capital, int population, double area) {
-        //TODO
+        this.name = name;
+        this.capital = capital;
+        this.population = population;
+        this.area = area;
 
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
-    public String getCapital() {
+    public static String getCapital() {
         return capital;
     }
 
-    public int getPopulation() {
+    public static int getPopulation() {
         return population;
     }
 
-    public double getArea() {
+    public static double getArea() {
         return area;
     }
 
     @Override
     public String toString() {
-        //TODO
-        return "";
+        String string = "";
+        string = string + this.name;
+        string = string + " " + this.capital;
+        string = string + " " + this.population;
+        string = string + this.area;
+        return string;
     }
 
     @Override
