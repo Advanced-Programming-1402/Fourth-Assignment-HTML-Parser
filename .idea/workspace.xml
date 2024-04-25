@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a605dfff-ee43-4feb-8a32-11c0aa0402f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ParserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ParserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Country.java" afterDir="false" />
+    <list default="true" id="a605dfff-ee43-4feb-8a32-11c0aa0402f8" name="Changes" comment="html-final">
       <change beforePath="$PROJECT_DIR$/src/main/java/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +45,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="unknown &lt;sarinahassani0525@gmail.com&gt;" />
+        <option value="Farid Karimi &lt;118434072+farid-karimi@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -71,24 +66,24 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Fourth-Assignment-HTML-Parser [:Parser.main()].executor": "Run",
-    "Gradle.ParserTest.testSortByArea.executor": "Run",
-    "Gradle.ParserTest.testSortByName.executor": "Run",
-    "Gradle.ParserTest.testSortByPopulation.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/PISHGAMAN09126026205/Desktop/AP/Fourth-Assignment-HTML-Parser/src/test/java/ParserTest.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Fourth-Assignment-HTML-Parser [:Parser.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ParserTest.testSortByArea.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ParserTest.testSortByName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ParserTest.testSortByPopulation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PISHGAMAN09126026205/Desktop/AP/Fourth-Assignment-HTML-Parser&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\homework\semester 4\TA\HTML-Parser\src\main\java" />
@@ -205,9 +200,29 @@
       <workItem from="1709147208766" duration="626000" />
       <workItem from="1709754207930" duration="532000" />
     </task>
+    <task id="LOCAL‎−۰۰۰۰۱" summary="html-final">
+      <option name="closed" value="true" />
+      <created>1714030159557</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۱" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۱" />
+      <updated>1714030159557</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۲" summary="html-final">
+      <option name="closed" value="true" />
+      <created>1714076354882</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۲" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۲" />
+      <updated>1714076354882</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="html-final" />
+    <option name="LAST_COMMIT_MESSAGE" value="html-final" />
   </component>
 </project>
