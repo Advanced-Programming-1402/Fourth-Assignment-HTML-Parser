@@ -3,7 +3,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
+import java.lang.reflect.WildcardType;
 import java.nio.file.Files;
 import java.util.*;
 
@@ -53,12 +56,53 @@ public class Parser {
 //            System.out.println(div.text());
 //        }
         for (Element div : divs) {
-            String name = div.select("country-name").text();
-            String capital = div.select("country-capital").text();
-            int population = Integer.parseInt(div.select("country-population").text());
-            double area = Double.parseDouble(div.select("country-area").text());
+            String name = div.select(".country-name").text();
+            String capital = div.select(".country-capital").text();
+            int population = Integer.parseInt(div.select(".country-population").text());
+            double area = Double.parseDouble(div.select(".country-area").text());
             Country country1 = new Country(name , capital , population , area);
             countries.add(country1);
+        }
+    }
+    public void menu() throws Exception{
+        for (int i = 0 ; i < countries.size() ; i++ ){
+            System.out.println(i + "- Country: " + countries.get(i).getName() + ", capital: " + countries.get(i).getCapital() + ", population: " + countries.get(i).getPopulation() + ", area: " + countries.get(i).getArea());
+        }
+        int stop = 1;
+        while (stop != 0) {
+            System.out.println("Please Enter The number Of What you Want : ");
+            System.out.println("1.Sorted By Population\n2.Sorted By Area\n3.Sorted By Name\n4.Back");
+            Scanner input = new Scanner(System.in);
+            int userInput = input.nextInt();
+            while (userInput > 4 || userInput < 1) {
+                System.out.println("Invalid Data !!");
+                System.out.print("Try Again : ");
+                userInput = input.nextInt();
+            }
+            switch (userInput) {
+                case 1 :
+                    Parser parser = new Parser();
+                    for (int i = 0 ; i < parser.sortByPopulation().size() ; i++) {
+                        System.out.println(i + "- Country: " + parser.sortByPopulation().get(i).getName() + ", capital: " + parser.sortByPopulation().get(i).getCapital() + ", population: " + parser.sortByPopulation().get(i).getPopulation() + ", area: " + parser.sortByPopulation().get(i).getArea());
+                    }
+
+                    break;
+                case 2 :
+                    Parser parser1 = new Parser();
+                    for (int i = 0 ; i < parser1.sortByArea().size() ; i++) {
+                        System.out.println(i + "- Country: " + parser1.sortByArea().get(i).getName() + ", capital: " + parser1.sortByArea().get(i).getCapital() + ", population: " + parser1.sortByArea().get(i).getPopulation() + ", area: " + parser1.sortByArea().get(i).getArea());
+                    }
+                    break;
+                case 3 :
+                    Parser parser2 = new Parser();
+                    for (int i = 0 ; i < parser2.sortByName().size() ; i++) {
+                        System.out.println(i + "- Country: " + parser2.sortByName().get(i).getName() + ", capital: " + parser2.sortByName().get(i).getCapital() + ", population: " + parser2.sortByName().get(i).getPopulation() + ", area: " + parser2.sortByName().get(i).getArea());
+                    }
+                    break;
+                case 4 :
+                    stop = 0;
+                    break;
+            }
         }
     }
 
@@ -66,15 +110,7 @@ public class Parser {
       try {
           Parser obj = new Parser();
           obj.setUp();
-          System.out.println("hello");
-          System.out.println(countries.size());
-          for (int i = 0 ; i < countries.size() ; i++) {
-              System.out.println(countries.get(i));
-          }
-          for (int i = 0 ; i < obj.sortByName().size() ; i++) {
-              System.out.println(obj.sortByName().get(i));
-          }
-          System.out.println("hello");
+          obj.menu();
       } catch (Exception e) {
           System.out.println("----------------");
           e.getStackTrace();
