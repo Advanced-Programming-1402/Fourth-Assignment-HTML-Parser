@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a605dfff-ee43-4feb-8a32-11c0aa0402f8" name="Changes" comment="" />
+    <list default="true" id="b0666f6e-e83b-42f2-8acd-e5be02a48ff7" name="Changes" comment="added a simple GUI">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ParserTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ParserTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ParserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ParserTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Parser.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,36 +31,53 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2czxOLfEywYECmtdYeXccYebHio" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2fK2uNVCZnOEEVbE1Or3wDjlMuA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Asus/Desktop/placeHolder/Second-Assignment-CineScribe",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "Gradle.4 [:Parser.main()].executor": "Run",
+    "Gradle.ParserTest.executor": "Run",
+    "Gradle.ParserTest.testSortByPopulation.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/University/Advanced Programming/Assignments/Norooz",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\homework\semester 4\TA\HTML-Parser\src\main\java" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration name="ParserTest.testSortByName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ParserTest.testSortByPopulation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -57,7 +90,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ParserTest.testSortByName&quot;" />
+            <option value="&quot;ParserTest.testSortByPopulation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -65,31 +98,109 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ParserTest.testSortByName" />
+        <item itemvalue="Gradle.ParserTest.testSortByPopulation" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a605dfff-ee43-4feb-8a32-11c0aa0402f8" name="Changes" comment="" />
-      <created>1709128175583</created>
+      <changelist id="b0666f6e-e83b-42f2-8acd-e5be02a48ff7" name="Changes" comment="" />
+      <created>1713535671393</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709128175583</updated>
-      <workItem from="1709128177461" duration="3475000" />
-      <workItem from="1709131890398" duration="40000" />
-      <workItem from="1709132777776" duration="1878000" />
-      <workItem from="1709147208766" duration="626000" />
-      <workItem from="1709754207930" duration="532000" />
+      <updated>1713535671393</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit [someone will be murdered for how long it took to find a vpn to fucking download gradel]">
+      <option name="closed" value="true" />
+      <created>1713710840290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713710840290</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit 2!!!">
+      <option name="closed" value="true" />
+      <created>1713710855540</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713710855540</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implimented the HTML reading and setup method (went through more stack overflow forums than I knew existed also thanks to that one dude on Discord)">
+      <option name="closed" value="true" />
+      <created>1713726386088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713726386088</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Impleminted the sort by population function (thank you stack overflow once again)">
+      <option name="closed" value="true" />
+      <created>1713874733489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713874733489</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Impleminted the sort by area function (thank you stack overflow once again)">
+      <option name="closed" value="true" />
+      <created>1713875036296</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713875036296</updated>
+    </task>
+    <task id="LOCAL-00006" summary="and last but not least the sort by name function">
+      <option name="closed" value="true" />
+      <created>1713875439689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713875439689</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added a simple GUI">
+      <option name="closed" value="true" />
+      <created>1713877088139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713877088139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit [someone will be murdered for how long it took to find a vpn to fucking download gradel]" />
+    <MESSAGE value="Initial commit 2!!!" />
+    <MESSAGE value="implimented the HTML reading and setup method (went through more stack overflow forums than I knew existed also thanks to that one dude on Discord)" />
+    <MESSAGE value="Impleminted the sort by population function (thank you stack overflow once again)" />
+    <MESSAGE value="Impleminted the sort by area function (thank you stack overflow once again)" />
+    <MESSAGE value="and last but not least the sort by name function" />
+    <MESSAGE value="added a simple GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a simple GUI" />
   </component>
 </project>

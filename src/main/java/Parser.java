@@ -2,47 +2,193 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import javax.swing.*;
+import java.awt.event.WindowEvent;
+import java.util.List;
 
 public class Parser {
     static List<Country> countries = new ArrayList<>();
 
-    public List<Country> sortByName(){
+    public static List<Country> sortByName()
+    {
         List<Country> sortedByName = new ArrayList<>(countries);
-        // Sort countries alphabetically (least)
-        //TODO
+        Collections.sort(sortedByName, new Comparator<Country>()
+        {
+            @Override
+            public int compare(Country PHcountry1, Country PHcountry2)
+            {
+                String name1 = PHcountry1.getName();
+                String name2 = PHcountry2.getName();
+                return name1.compareTo(name2);
+            }
+        });
+
         return  sortedByName;
     }
 
-    public List<Country> sortByPopulation(){
+    public static List<Country> sortByPopulation()
+    {
         List<Country> sortedByPopulation = new ArrayList<>(countries);
-        // Sort countries by population (most)
-        //TODO
+        Collections.sort(sortedByPopulation, new Comparator<Country>()
+        {
+            @Override
+            public int compare(Country PHcountry1, Country PHcountry2)
+            {
+                int population1 = PHcountry1.getPopulation();
+                int population2 = PHcountry2.getPopulation();
+                return Integer.compare(population2, population1);
+            }
+        });
+
         return sortedByPopulation;
     }
 
-    public List<Country> sortByArea(){
+    public static List<Country> sortByArea()
+    {
         List<Country> sortedByArea = new ArrayList<>(countries);
-        // Sort countries by area (most)
-        //TODO
+        Collections.sort(sortedByArea, new Comparator<Country>()
+        {
+            @Override
+            public int compare(Country PHcountry1, Country PHcountry2)
+            {
+                double area1 = PHcountry1.getArea();
+                double area2 = PHcountry2.getArea();
+                return Double.compare(area2, area1);
+            }
+        });
         return sortedByArea;
     }
 
-    public void setUp() throws IOException {
+    public static void setUp()
+    {
+        try {
+            File HTMLfile = new File("src/Resources/country-list.html");
+            Document document = Jsoup.parse(HTMLfile, "UTF-8");
 
-        //Parse the HTML file using Jsoup
-        //TODO
+            Elements elements = document.select("div.country");
 
-        // Extract data from the HTML
-        //TODO
+            for (Element element : elements)
+            {
+                String name = element.select("h3.country-name").text();
+                String capital = element.select("span.country-capital").text();
+                int population = Integer.parseInt(element.select("span.country-population").text());
+                double area = Double.parseDouble(element.select("span.country-area").text());
+                Country PHcountry = new Country(name, capital, population, area);
+                countries.add(PHcountry);
+            }
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
-        // Iterate through each country div to extract country data
-        //TODO
     }
 
-    public static void main(String[] args) {
-        //you can test your code here before you run the unit tests ;)
+    public static void main(String[] args)
+    {
+        setUp();
+
+        String sortedByNameCountries = "SORTER BY NAME:";
+        String sortedByAreaCountries = "SORTED BY AREA";
+        String sortedByPopulationCountries = "SORTED BY POPULATION";
+
+        for (Country item : sortByName())
+        {
+            sortedByNameCountries = sortedByNameCountries + "\n" + "\n" + item.getName() + " - " + item.getArea() + " - " + item.getPopulation();
+        }
+
+        for (Country item : sortByArea())
+        {
+            sortedByAreaCountries = sortedByAreaCountries + "\n" + "\n" + item.getName() + " - " + item.getArea() + " - " + item.getPopulation();
+        }
+
+        for (Country item : sortByPopulation())
+        {
+            sortedByPopulationCountries = sortedByPopulationCountries + "\n" + "\n" + item.getName() + " - " + item.getArea() + " - " + item.getPopulation();
+        }
+
+
+        JFrame frame = new JFrame("Countries");
+
+        JTextArea textArea1 = new JTextArea();
+        textArea1.setBounds(10, 30, 280, 450);
+        textArea1.setText(sortedByNameCountries);
+        textArea1.setEditable(false);
+        textArea1.setVisible(false);
+        JScrollPane scroll1 = new JScrollPane(textArea1);
+        scroll1.setBounds(10, 30, 280, 450);
+        scroll1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+        JTextArea textArea2 = new JTextArea();
+        textArea2.setBounds(10, 30, 280, 450);
+        textArea2.setText(sortedByAreaCountries);
+        textArea2.setEditable(false);
+        textArea2.setVisible(false);
+        JScrollPane scroll2 = new JScrollPane(textArea2);
+        scroll2.setBounds(10, 30, 280, 450);
+        scroll2.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+        JTextArea textArea3 = new JTextArea();
+        textArea3.setBounds(10, 30, 280, 450);
+        textArea3.setText(sortedByPopulationCountries);
+        textArea3.setEditable(false);
+        textArea3.setVisible(false);
+        JScrollPane scroll3 = new JScrollPane(textArea3);
+        scroll3.setBounds(10, 30, 280, 450);
+        scroll3.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+
+        JButton button1 = new JButton("SORT BY ALPHABETICAL ORDER");
+        button1.setBounds(500, 100, 250, 20);
+        JButton button2 = new JButton("SORT BY AREA");
+        button2.setBounds(500, 150, 250, 20);
+        JButton button3 = new JButton("SORT BY POPULATION");
+        button3.setBounds(500, 200, 250, 20);
+
+        button1.addActionListener(e -> {
+            scroll1.setVisible(true);
+            scroll2.setVisible(false);
+            scroll3.setVisible(false);
+
+            textArea1.setVisible(true);
+            textArea2.setVisible(true);
+            textArea3.setVisible(true);
+        });
+        button2.addActionListener(e -> {
+            scroll2.setVisible(true);
+            scroll1.setVisible(false);
+            scroll3.setVisible(false);
+
+            textArea1.setVisible(true);
+            textArea2.setVisible(true);
+            textArea3.setVisible(true);
+        });
+        button3.addActionListener(e -> {
+            scroll3.setVisible(true);
+            scroll1.setVisible(false);
+            scroll2.setVisible(false);
+
+            textArea1.setVisible(true);
+            textArea2.setVisible(true);
+            textArea3.setVisible(true);
+        });
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+        frame.setLocationRelativeTo(null);
+        frame.setSize(900, 550);
+        frame.add(scroll1);
+        frame.add(scroll2);
+        frame.add(scroll3);
+        frame.add(button1);
+        frame.add(button2);
+        frame.add(button3);
+        frame.setVisible(true);
+
     }
 }
