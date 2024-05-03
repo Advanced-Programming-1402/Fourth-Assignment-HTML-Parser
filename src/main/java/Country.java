@@ -6,7 +6,7 @@ public class Country {
     private int population;
     private double area;
 
-    public Country(String name, String capital, int population, double area) {
+    public Country(String name, String capital, int population, double area) { //constructor
         //TODO
 
     }
